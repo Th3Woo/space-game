@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Browser Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Space Explorer</h2>
+        <ul>
+            <li><a href="#" id="explore-link">Explore</a></li>
+            <li><a href="#" id="log-link">Exploration Log</a></li>
+        </ul>
+        <div class="settings">
+            <label for="radar-range">Radar Range:</label>
+            <input type="number" id="radar-range" value="100">
+            <br>
+            <label for="num-ships">Number of Ships:</label>
+            <input type="number" id="num-ships" value="5">
+        </div>
+    </div>
+    <div class="main-content">
+        <button id="explore-button">Explore</button>
+        <div id="planet-info"></div>
+        <div id="exploration-log" style="display: none;">
+            <h2>Exploration Log</h2>
+            <ul id="log-list"></ul>
+            <button id="forget-button">Forget Unchecked</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
